@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Point Position Applications</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python&amp;skin=sunburst"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="pointpositionprojection.html">Point Position Applications</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Point Position  <br />
+										Applications</h1>
+									
+								</header>
+
+								<span class="image fit"><img src="images/grass1.jpg" alt="" /></span>
+									<p> I worked on the grass for Angry Birds Blues. The XGen expressions was used to achieve the look. <br/>
+										One very useful variable I like to use in the XGen expressions is $P (the surface point at which the primitive is being evaluated).<br/>
+										This can be used to create some interesting tool. For example, by knowing the position and radius of an object, we can create a spherical mask
+										with this expression. <br/> <br/>
+
+										length($P - $some_obj_position) < $some_obj_radius; <br/><br/>
+
+										<span class="image"><img src="images/grassRad2.gif" alt="" /></span>
+										<br/><br/>
+
+										We can build something more complex like creating a mask that fits the camera frustum. <br/><br/>
+										<span class="image"><img src="images/xgentools.gif" alt="" /></span><br/>
+
+										Think of $P as world space which means it can be converted to camera space then screan space using some matrix formulas.<br/>
+										We can use the following to rotate $P (world space) so that it matches the camera rotation.
+
+										<br/>
+										<span class="image"><img src="images/matrixMath.jpg" alt="" /></span><br/>
+
+										Translation is simply done by subtracting $P by the camera translation. 
+										Now we can give it a perspective that respects the camera FOV using this formula: <br/><br/>
+
+										<span class="image"><img src="images/fov.jpg" alt="" /></span><br/>
+
+										 Python can be used to query info about any camera and pass to any XGen description using XGen API.<br/><br/>
+
+										 <span class="image"><img src="images/exp.gif" alt="" /></span><br/><br/>
+
+										 If we execute the tools every frame by passing them here: <br/>
+										
+										 <span class="image"><img src="images/settings.jpg" alt="" /></span><br/>
+
+										 We get this.<br/><br/>
+
+										 <span class="image"><img src="images/xgenRadAnim.gif" alt="" /></span><br/>
+										 <span class="image"><img src="images/xgentoolsAnim.gif" alt="" /></span><br/>
+
+										 Note : XGen culling options are not being used here. This result is achieved by expressions only.<br/><br/>
+
+										 Everything you've seen can be applied to any DCC that provide some representation of a coordinate space. 
+										 This can be an image like a render of point poisition AOV.<br/>
+
+										 <span class="image"><img src="images/worldSpace.png" alt="" /></span><br/>
+										
+										 This is a gizmo I built in Nuke that takes a render of point position AOV and convert it from world space to screen space 
+										 just like I did with XGen except this time instead of create a frustum mask of black and white values, 
+										 I created a gradient red and grean map (0 to 1) so that I can take advantage ot the STMap node in Nuke like I did with the speedline tool.<br/>
+
+
+										<span class="image"><img src="images/nukeppp1.gif" alt="" /></span><br/>
+
+										That allows us to project any image to our renders without the need to import the geos.
+										all we need is a point position AOV and a camera. <br/>
+
+										<span class="image"><img src="images/nukeppp2.gif" alt="" /></span><br/>
+
+										The applications are endless but here are some more.<br/>
+
+
+										<span class="image"><img src="images/ppaplications.gif" alt="" /></span><br/>
+
+
+
+
+
+										
+
+										
+									</p>
+									<!-- Break -->
+									
+							</section>
+
+					</div>
+
+				
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
