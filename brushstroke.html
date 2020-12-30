@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>brushstroke</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python&amp;skin=sunburst"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="brushstroke.html">Painterly Rendering</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-eye" id="count"><span class="label"></span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1> brushstroke </h1>
+									
+								</header>
+								
+								<span class="image fit"><img src="images/paint2.jpg" alt="" /></span>
+									<p> 
+										In this page I'll share my approch to do painterly rendering.<br/>
+
+
+										My goal with the approach is to make the brushstroke get applied in comp and not during the initial render. Why?<br/>
+										- No custom shader or Arnold C++ API is required. <br/>
+										- The brushstroke will take into account any potential color correction or relighting in comp.<br/>
+										
+										<span class="image"><img src="images/paintanim.gif" alt="" /></span><br/>
+
+
+										Here is how I did it using Houdini and Nuke:<br/><br/>
+
+
+										In Houdini, we can scatter planes with colors that represent the primitives positions (@P).<br />
+										The planes are then cut by brush-like alpha. In Nuke we converted the primitives colors (world position) from world space to screen space.<br/>
+										finally we use the STMap node just like we did with <a href="speedline.html">the speedline tool</a>.<br/>
+										
+										<span class="image fit"><img src="images/paint4.jpg" alt="" /></span>
+										
+										(Converting the colors from world to screen was covered in <a href="pointpositionprojection.html">point position projection</a>.)<br/> <br />
+										
+										
+										
+									</p>
+
+								
+
+									<!-- Break -->
+									
+							</section>
+
+					</div>
+
+				
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/counter_pointposition.js"></script>
+
+	</body>
+</html>

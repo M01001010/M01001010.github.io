@@ -45,15 +45,17 @@
 										Applications</h1>
 									
 								</header>
-								
+								<h3>Maya XGen</h3>
 								<span class="image fit"><img src="images/grass1.jpg" alt="" /></span>
-									<p> I worked with XGen for the first time during the development period of Angry Birds Blues,
-										I was lucky to be able to build the grass for the show. The XGen expressions were used to achieve the look. <br/>
+									<p> 
+										
+										I worked on XGen for the first time during the development period of Angry Birds Blues,
+										I was lucky to be able to build the grass for the show. XGen expression were used to achieve the look. <br/>
 										One very useful variable I like to use in the XGen expressions is $P (the surface point at which the primitive is being evaluated).<br/>
 										This can be used to create some interesting tool. For example, by knowing the position and radius of an object, we can create a spherical mask
 										with this expression. <br/> <br/>
 
-										length($P - $some_obj_position) < $some_obj_radius; <br/><br/>
+										length($P - $locator_position) < $locator_radius; <br/><br/>
 
 										<span class="image"><img src="images/grassRad2.gif" alt="" /></span>
 										<br/><br/>
@@ -72,29 +74,32 @@
 
 										<span class="image"><img src="images/fov.jpg" alt="" /></span><br/>
 
-										 Python can be used to query info about any camera and pass to any XGen description using XGen API.<br/><br/>
+											Python can be used to query info about any camera and pass to any XGen description using XGen API.<br/><br/>
 
-										 <span class="image"><img src="images/exp.gif" alt="" /></span><br/><br/>
+											<span class="image"><img src="images/exp.gif" alt="" /></span><br/><br/>
 
-										 If we execute the tools every frame by passing them here: <br/>
+											If we execute the python code every frame by passing them here: <br/>
 										
-										 <span class="image"><img src="images/settings.jpg" alt="" /></span><br/>
+											<span class="image"><img src="images/settings.jpg" alt="" /></span><br/>
 
-										 We get this.<br/><br/>
+											We get this.<br/><br/>
 
-										 <span class="image"><img src="images/xgenRadAnim.gif" alt="" /></span><br/>
-										 <span class="image"><img src="images/xgentoolsAnim.gif" alt="" /></span><br/>
+											<span class="image"><img src="images/xgenRadAnim.gif" alt="" /></span><br/>
+											<span class="image"><img src="images/xgentoolsAnim.gif" alt="" /></span><br/>
+											
+											Note : XGen culling options are not being used here. This result is achieved by expressions only.<br/><br/>
+											
+											
+											<h3>NUKE</h3>
 
-										 Note : XGen culling options are not being used here. This result is achieved by expressions only.<br/><br/>
+											Everything you've seen can be applied to any DCC that provide some representation of a coordinate space. 
+											This can be an image like a render of point poisition AOV.<br/>
 
-										 Everything you've seen can be applied to any DCC that provide some representation of a coordinate space. 
-										 This can be an image like a render of point poisition AOV.<br/>
-
-										 <span class="image"><img src="images/worldSpace.png" alt="" /></span><br/>
+											<span class="image"><img src="images/worldSpace.png" alt="" /></span><br/>
 										
-										 This is a gizmo I built in Nuke that takes a render of point position AOV and convert it from world space to screen space 
-										 just like I did with XGen except this time instead of create a frustum mask of black and white values, 
-										 I created a gradient red and grean map (0 to 1) so that I can take advantage ot the STMap node in Nuke like I did with the speedline tool.<br/>
+											This is a gizmo I built in Nuke that takes a render of point position AOV and convert it from world space to screen space 
+											just like I did with XGen except this time instead of create a frustum mask of black and white values, 
+											I created a gradient red and grean map (0 to 1) so that I can take advantage ot the STMap node in Nuke like I did with the speedline tool.<br/>
 
 
 										<span class="image"><img src="images/nukeppp1.gif" alt="" /></span><br/>
@@ -104,16 +109,14 @@
 
 										<span class="image"><img src="images/nukeppp2.gif" alt="" /></span><br/>
 
-										The applications are endless but here are some more.<br/>
+										This gizmo was used in Angry Birds Blues to project lights and shadows etc.
+										<span class="image fit"><img src="images/flash.jpg" alt="" /></span><br/>
+
+										The applications are endless.<br/>
 
 
 										<span class="image"><img src="images/ppaplications.gif" alt="" /></span><br/>
 
-
-
-
-
-										
 
 										
 									</p>
