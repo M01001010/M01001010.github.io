@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Painterly Rendering</title>
+		<title>Lighting & Compositing</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,7 +27,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="brushstroke.html">Painterly Rendering</a></li>
+							<li class="active"><a href="comp.html">Lighting & Compositing</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-eye" id="count"><span class="label"></span></a></li>
@@ -41,46 +41,20 @@
 							<section class="post">
 								<header class="major">
 									
-									<h1> brushstroke </h1>
+									<h1> Lighting & Compositing </h1>
 									
 								</header>
 								
-								<span class="image fit"><img src="images/paint2.jpg" alt="" /></span>
+                                
 									<p> 
-										In this page I'll share my approch to do painterly rendering.<br/>
-
-
-										My goal with the approach is to make the brushstroke get applied in comp and not during the initial render. Why?<br/>
-										- No custom shader or Arnold C++ API is required. <br/>
-										- The brushstroke will take into account any potential color correction or relighting in comp.<br/>
-										
-										<span class="image"><img src="images/paintanim.gif" alt="" /></span><br/>
-
-
-										Here is how I did it using Houdini and Nuke:<br/><br/>
-
-
-										In Houdini, we can scatter planes with colors that represent the primitives positions (@P).<br />
-										The planes are then cut by brush-like alpha. In Nuke we converted the primitives colors (world position) from world space to screen space.<br/>
-										finally we use the STMap node just like we did with <a href="speedline.html">the speedline tool</a>.<br/>
-										
-										<span class="image fit"><img src="images/paint4.jpg" alt="" /></span>
-										
-										(Converting the colors from world to screen was covered in <a href="pointpositionprojection.html">point position projection</a>.)<br/> <br />
-										
-										
-										
+                                       <span class="image fit"><img src="images/zbrush/jhon.jpg" alt="" /></span><br/>
+                                       <span class="image fit"><img src="images/zbrush/mo1.png" alt="" /></span><br/>
+                                       <span class="image fit"><img src="images/zbrush/mo2.jpg" alt="" /></span><br/>
 									</p>
-
 								
-
 									<!-- Break -->
-									
 							</section>
-
 					</div>
-
-				
 			</div>
 
 		<!-- Scripts -->
