@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Selection Tool</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python&amp;skin=sunburst"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="selectiontool.html">Selection Tool</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-eye" id="count"><span class="label"></span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1> Selection Tool </h1>
+									
+								</header>
+								<P>This tool selects objects based on criteria like size, distance, and whether in frustum or not.</P>
+                                <span class="image "><img src="images/selection/1.png" alt="" /></span><br />
+                                <P>
+                                    For example if you want to select objects that are close to the camera you click on "close +" 
+                                </P>
+                                <span class="image "><img src="images/selection/2.png" alt="" /></span><br />
+                                <P>
+                                    Similarly if you want to select small objects you click on "small +"
+                                </P>
+                                <span class="image "><img src="images/selection/3.png" alt="" /></span><br />
+                                <P>
+                                    Whether an object is small/large or close/far is determined by a threshold slider.
+                                </P>
+                                <span class="image "><img src="images/selection/4.png" alt="" /></span><br />
+                                <P>
+                                    
+                                    Multiple sets of selection can be merged with some operations to get interesting results
+                                </P>
+                                <span class="image "><img src="images/selection/5.png" alt="" /></span><br />
+                                <P>
+                                    
+                                </P>
+                                <span class="image "><img src="images/selection/6.png" alt="" /></span><br />
+                                <P>
+                                    You can use this tool to hide small objects that's neither in frustum nor near the camera in order to optimize the render layer which could improve the render times. <br/>
+                                    How are the size and distance measured?
+                                </P>
+                                <span class="image "><img src="images/selection/7.png" alt="" /></span><br />
+                                <P>
+                                    
+                                    If you're familiar with vectors then size is basically the diameter which is also the magnitude of the bounding box vector.
+                                    Distance however is the vector from the camera to the center of the bounding box minus the radius
+                                </P>
+                                <span class="image "><img src="images/selection/8.png" alt="" /></span><br />
+                                <P>
+                                    
+                                </P>
+
+
+								
+
+									<!-- Break -->
+									
+							</section>
+
+					</div>
+
+				
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/counter_pointposition.js"></script>
+
+	</body>
+</html>
