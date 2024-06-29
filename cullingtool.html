@@ -57,15 +57,15 @@
 										First, we need to simplify the instance points, we can make one point represent a cluster of points within X radius.<br/>
 										This will speed up any calculation we'll do later.<br/><br/>
 
-										<span class="image"><img src="images/culling/heavytolight.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/heavytolight.JPG" alt="" /></span>
 										<br/><br/>
 
 										
 										We can optimize it further by just working with the points in the furstum, and yes we can extrude the frustum <br/>
-										to make sure we're culling the points on the camera edge. <br/><br/>
+										to make sure we're not culling the points on the camera edge. <br/><br/>
 
 
-										<span class="image"><img src="images/culling/frustum.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/frustum.JPG" alt="" /></span>
 										<br/><br/>
 
 
@@ -73,10 +73,10 @@
 										How do we go about that? <br/>
 										One method is to shoot a ray from each point to the camera. If nothing blocks the ray, that means the camera can see it.<br/>
 
-										<span class="image"><img src="images/culling/explaination.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/explaination.JPG" alt="" /></span>
 										<br/><br/>
 									
-										<span class="image"><img src="images/culling/ray.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/ray.JPG" alt="" /></span>
 										<br/><br/>
 
 
@@ -84,27 +84,27 @@
 
 
 
-										<span class="image"><img src="images/culling/bleed.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/bleed.JPG" alt="" /></span>
 										<br/><br/>
 
-										We have the option to never cull a points if it's within X radius from the camera. <br/>
+										We have the option to never cull a point if it's within X radius from the camera. <br/>
 
-										<span class="image"><img src="images/culling/near.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/near.JPG" alt="" /></span>
 										<br/><br/>
 
 										Now that we've computed what to keep and what to cull, we can transfer the computation result to the original dense points. <br/>
 
-										<span class="image"><img src="images/culling/result.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/result.JPG" alt="" /></span>
 										<br/><br/>
 
 										Let's see the result from the rendering camera. I'm also going to throw a large pig head there to see how much points behind it we can cull. <br/>
 
-										<span class="image"><img src="images/culling/testgif.gif" alt="" /></span>
+										<span class="image fit"><img src="images/culling/testgif.gif" alt="" /></span>
 										<br/><br/>
 
 										Nice! but what if the camera is moving?<br/>
 
-										<span class="image"><img src="images/culling/animgif.gif" alt="" /></span>
+										<span class="image fit"><img src="images/culling/animgif.gif" alt="" /></span>
 										<br/><br/>
 
 										What we can do here is keep the points if it is visible at any frame. <br/>
@@ -113,7 +113,7 @@
 										I've simplified a lot of what's actually been done in a production environment :) <br/><br/>
 										
 
-										<span class="image"><img src="images/culling/feynman.JPG" alt="" /></span>
+										<span class="image fit"><img src="images/culling/feynman.JPG" alt="" /></span>
 										<br/><br/>
 
 										
