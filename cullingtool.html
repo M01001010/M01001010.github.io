@@ -47,31 +47,30 @@
 								
 								<span class="image fit"><img src="images/culling/landscape.JPG" alt="" /></span>
 									<p> 
-										
-										A wide shot of a landscape can have millions and millions of instance points, a lot of which may not make it to the final pixel.<br/>
-										This is why I've developed this HDA in Houdini where it can calculate what points to keep and what instance points we can cull.<br/>
+										A wide shot of a landscape can contain millions of instance points, many of which may not contribute to the final pixel.<br/>
+										This is why I developed an HDA in Houdini for The Lion King movie, which calculates which points to keep and which to cull.<br/>
 										
 
 										<h3>How does it work?</h3>
 
-										First, we need to simplify the instance points, we can make one point represent a cluster of points within X radius.<br/>
-										This will speed up any calculation we'll do later.<br/><br/>
+										First, we simplify the instance points by having one point represent a cluster of points within a certain radius. <br/>
+										This speeds up subsequent calculations.<br/><br/>
 
 										<span class="image fit"><img src="images/culling/heavytolight.JPG" alt="" /></span>
 										<br/><br/>
 
 										
-										We can optimize it further by just working with the points in the furstum, and yes we can extrude the frustum <br/>
-										to make sure we're not culling the points on the camera edge. <br/><br/>
+										We further optimize by working only with the points within the frustum, and we can extrude the frustum <br/>
+										to ensure we're not culling points near the camera's edge. <br/><br/>
 
 
 										<span class="image fit"><img src="images/culling/frustum.JPG" alt="" /></span>
 										<br/><br/>
 
 
-										Now within the frustum let's find what point can be seen and what's being blocked.<br/>
-										How do we go about that? <br/>
-										One method is to shoot a ray from each point to the camera. If nothing blocks the ray, that means the camera can see it.<br/>
+										Within the frustum, we determine which points are visible and which are blocked. <br/>
+										One method is to shoot a ray from each point to the camera. <br/>
+										If the ray is not blocked, the point is visible.<br/>
 
 										<span class="image fit"><img src="images/culling/explaination.JPG" alt="" /></span>
 										<br/><br/>
@@ -80,24 +79,24 @@
 										<br/><br/>
 
 
-										We can extend the visible map just for safty. It's best to keep more points than needed rather than culling points that shouldn't be culled.<br/>
+										We extend the visible map for safety, as it's better to retain more points than to cull necessary ones.<br/>
 
 
 
 										<span class="image fit"><img src="images/culling/bleed.JPG" alt="" /></span>
 										<br/><br/>
 
-										We have the option to never cull a point if it's within X radius from the camera. <br/>
+										Additionally, we have the option never to cull a point if it is within a certain radius from the camera. <br/>
 
 										<span class="image fit"><img src="images/culling/near.JPG" alt="" /></span>
 										<br/><br/>
 
-										Now that we've computed what to keep and what to cull, we can transfer the computation result to the original dense points. <br/>
+										Once we've computed which points to keep and which to cull, we transfer the results to the original dense points. <br/>
 
 										<span class="image fit"><img src="images/culling/result.JPG" alt="" /></span>
 										<br/><br/>
 
-										Let's see the result from the rendering camera. I'm also going to throw a large pig head there to see how much points behind it we can cull. <br/>
+										Let's see the results from the rendering camera. I'll also add a large pig head to observe how many points behind it we can cull. <br/>
 
 										<span class="image fit"><img src="images/culling/testgif.gif" alt="" /></span>
 										<br/><br/>
@@ -107,17 +106,17 @@
 										<span class="image fit"><img src="images/culling/animgif.gif" alt="" /></span>
 										<br/><br/>
 
-										What we can do here is keep the points if it is visible at any frame. <br/>
+										To address this, we can keep the points visible in any frame. <br/>
 										
 										<br/>
-										I've simplified a lot of what's actually been done in a production environment :) <br/><br/>
+										I've simplified a lot of what's actually done in a production environment :) <br/><br/>
 										
 
 										<span class="image fit"><img src="images/culling/feynman.JPG" alt="" /></span>
 										<br/><br/>
 
 										
-										You can download the houdini setup up I used here as an example:<br/>
+										You can download the Houdini setup I used as an example here:<br/>
 										
 										<a href="https://github.com/M01001010/CullingHDA">Houdini File</a>
 
