@@ -47,17 +47,17 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Personal</h1>
+        <!-- <h1 class="sitename">Personal</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li><a href="resume.html">Resume</a></li> -->
+          <!-- <li><a href="services.html">Services</a></li> -->
+          <!-- <li><a href="portfolio.html" >Portfolio</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -73,7 +73,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -92,8 +92,8 @@
             
 
             <div class="container" data-aos="zoom-out" data-aos-delay="100">
-              <h2>Emily Jones</h2>
-              <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span><span class="typed-cursor typed-cursor--blink"></span></p>
+              <h2>MJ Alajmi</h2>
+              <p>I'm a <span class="typed" data-typed-items="Technical Artist, CG Lead in Lighting/Compositing Artist, Pipeline TD"></span><span class="typed-cursor typed-cursor--blink"></span></p>
               <div class="social-links">
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -105,10 +105,9 @@
         </div>
       </div>
 
-
-
-      
     </div><!-- End Page Title -->
+
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -118,15 +117,21 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Maya</li>
+            <li data-filter=".filter-maya">Maya</li>
+            <li data-filter=".filter-houdini">Houdini</li>
+            <li data-filter=".filter-nuke">Nuke</li>
+            <li data-filter=".filter-unreal">Unreal</li>
+            <!-- <li data-filter=".filter-app">Maya</li>
             <li data-filter=".filter-product">Houdini</li>
             <li data-filter=".filter-branding">Nuke</li>
-            <li data-filter=".filter-books">Unreal</li>
+            <li data-filter=".filter-books">Unreal</li> -->
           </ul><!-- End Portfolio Filters -->
+          
+          <h1><br></h1>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -136,24 +141,100 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div> -->
 
 
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <a href="portfolio-details.html">
-                <h4>Point Position</h4>
-                
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-houdini">
+              <a href="cullingtool.html">
+                <h4>Optimizing Tool</h4>
                 <div class="portfolio-content h-100">
-                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                  </div>
+                  <img src="images/culling/thumbnail.jpg" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
                 </div>
               </a>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-maya filter-nuke">
+              <a href="speedline.html">
+                <h4>Trails Generator</h4>
+                <div class="portfolio-content h-100">
+                  <img src="images/speedlineIcon.jpg" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-maya filter-nuke">
+              <a href="point_position.html">
+                <h4>Point Position</h4>
+                <div class="portfolio-content h-100">
+                  <img src="images/pppicon.jpg" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-houdini filter-nuke">
+              <a href="brushstroke.html">
+                <h4>Painterly Rendering</h4>
+                <div class="portfolio-content h-100">
+                  <img src="images/brushstroke.jpg" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-houdini">
+              <a href="proceduralism.html">
+                <h4>Procedural Tools</h4>
+                <div class="portfolio-content h-100">
+                  <img src="images/proceduralcover.gif" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-maya">
+              <a href="selectiontool.html">
+                <h4>Selection Tool</h4>
+                <div class="portfolio-content h-100">
+                  <img src="images/selection/selcover.jpg" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-maya filter-nuke">
+              <a href="comp.html">
+                <h4>Lighting & Compositing</h4>
+                <div class="portfolio-content h-100">
+                  <img src="images/spidercover.jpg" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-unreal">
+              <a href="halftone.html">
+                <h4>Halftone in Unear Engine</h4>
+                <div class="portfolio-content h-100">
+                  <img src="images/toon/example.gif" class="img-fluid" alt="">
+                  <!-- <div class="portfolio-info">
+                  </div> -->
+                </div>
+              </a>
+            </div>
 
 
 
+<!-- 
             
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -165,7 +246,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -177,7 +258,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -189,7 +270,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -201,7 +282,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -213,7 +294,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -225,7 +306,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -237,7 +318,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -249,7 +330,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -261,7 +342,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -273,7 +354,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div> -->
 
           </div><!-- End Portfolio Container -->
 
@@ -287,8 +368,8 @@
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">Personal</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <!-- <h3 class="sitename">Personal</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
@@ -297,9 +378,9 @@
         <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
-        <div class="copyright">
+        <!-- <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
-        </div>
+        </div> -->
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->

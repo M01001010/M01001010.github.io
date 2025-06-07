@@ -113,10 +113,10 @@
     typed_strings = typed_strings.split(',');
     new Typed('.typed', {
       strings: typed_strings,
-      loop: false,
-      typeSpeed: 400,
-      backSpeed: 200,
-      backDelay: 3000
+      loop: true,
+      typeSpeed: 20,
+      backSpeed: 10,
+      backDelay: 2000
     });
   }
 
@@ -135,6 +135,16 @@
       offset: '80%',
       handler: function(direction) {
         let progress = item.querySelectorAll('.progress .progress-bar');
+        progress.forEach(el => {
+          el.style.width = el.getAttribute('aria-valuenow') + '%';
+        });
+      }
+    });
+    new Waypoint({
+      element: item,
+      offset: '80%',
+      handler: function(direction) {
+        let progress = item.querySelectorAll('.progress .progress-bar2');
         progress.forEach(el => {
           el.style.width = el.getAttribute('aria-valuenow') + '%';
         });

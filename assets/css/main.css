@@ -186,6 +186,21 @@ h6 {
     padding: 0;
   }
 
+  .navmenu ol {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navmenu>ol>li {
+    white-space: nowrap;
+    padding: 15px 14px;
+  }
+
+
+
   .navmenu ul {
     margin: 0;
     padding: 0;
@@ -869,6 +884,13 @@ section,
   background-color: var(--accent-color);
 }
 
+.skills .progress-bar2 {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color:#094927;
+}
+
 /*--------------------------------------------------------------
 # Interests Section
 --------------------------------------------------------------*/
@@ -1488,4 +1510,8 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.isotope-item > a > h4{
+  text-align: center;
 }
