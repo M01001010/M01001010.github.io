@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Personal Bootstrap Template</title>
+  <title>Applications of Point Position</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -44,34 +44,13 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Personal</h1>
+        
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -81,61 +60,94 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Starter Page</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+
 
     <!-- Starter Section Section -->
     <section id="portfolio" class="portfolio section">
 
+      <br/><br/><br/>
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <div><span>Check Our</span> <span class="description-title">Starter Section</span></div>
+        <h2>Maya & Nuke</h2>
+        <div>Applications of Point Position</div>
       </div><!-- End Section Title -->
 
 
-
-      
       <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
 
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
           <img src="images/grass1.jpg" alt="" class="img-fluid services-img">
+          <br/><br/>
           <!-- <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3> -->
-          <p>
-            <br>
-            I worked on XGen for the first time during the development period of Angry Birds Blues, I was lucky to be able to build the grass for the show. XGen expression were used to achieve the look.
-One very useful variable I like to use in the XGen expressions is $P (the surface point at which the primitive is being evaluated).
-This can be used to create some interesting tool. For example, by knowing the position and radius of an object, we can create a spherical mask with this expression.
+          <p>I worked on XGen for the first time during the development period of Angry Birds Blues,
+          I was lucky to be able to build the grass for the show. XGen expression were used to achieve the look. <br/>
+          One very useful variable I like to use in the XGen expressions is $P (the surface point at which the primitive is being evaluated).<br/>
+          This can be used to create some interesting tool. For example, by knowing the position and radius of an object, we can create a spherical mask
+          with this expression.</p> 
+
+          <p>length($P - $locator_position) < $locator_radius; </p>
+
+          <img src="images/grassRad2.gif" class="img-fluid services-img" alt="" />
+          
+
+          <p>We can build something more complex like creating a mask that fits the camera frustum. </p>
+
+          <img src="images/xgentools.gif" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>Think of $P as world space which means it can be converted to camera space then screan space using some matrix formulas.<br/>
+          We can use the following to rotate $P (world space) so that it matches the camera rotation.</p>
+
+          <br/>
+          <span ><img src="images/matrixMath.jpg" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>Translation is simply done by subtracting $P by the camera translation. 
+          Now we can give it a perspective that respects the camera FOV using this formula: </p>
+
+          <img src="images/fov.jpg" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>Python can be used to query info about any camera and pass to any XGen description using XGen API.</p>
+
+          <img src="images/exp.gif" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>If we execute the python code every frame by passing them here: </p>
+        
+          <img src="images/settings.jpg" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>We get this.</p>
+
+          <img src="images/xgenRadAnim.gif" class="img-fluid services-img" alt="" /><br/><br/>
+          <img src="images/xgentoolsAnim.gif" class="img-fluid services-img" alt="" /><br/><br/>
+          
+          <p>Note : XGen culling options are not being used here. This result is achieved by expressions only.<br/><br/></p>
+          
+          
+          <h3>NUKE</h3>
+
+          <p>Everything you've seen can be applied to any DCC that provide some representation of a coordinate space. 
+          This can be an image like a render of point poisition AOV.<br/></p>
+
+          <img src="images/worldSpace.png" class="img-fluid services-img" alt="" /><br/><br/>
+        
+          <p>This is a gizmo I built in Nuke that takes a render of point position AOV and convert it from world space to screen space 
+          just like I did with XGen except this time instead of create a frustum mask of black and white values, 
+          I created a gradient red and grean map (0 to 1) so that I can take advantage ot the STMap node in Nuke like I did with the speedline tool.<br/>
           </p>
-          <!-- <ul>
-            <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-          </ul> -->
-          <img src="images/matrixMath.jpg" alt="" class="img-fluid services-img">
-          <p>
-            Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-          </p>
+
+          <img src="images/nukeppp1.gif" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>That allows us to project any image to our renders without the need to import the geos.
+          all we need is a point position AOV and a camera.</p>
+
+          <img src="images/nukeppp2.gif" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>This gizmo was used in Angry Birds Blues to project lights and shadows etc.</p>
+          <img src="images/flash.jpg" class="img-fluid services-img" alt="" /><br/><br/>
+
+          <p>The applications are endless.<br/></p>
+
+
+          <img src="images/ppaplications.gif" class="img-fluid services-img" alt="" /><br/><br/>
+          <img src="images/arts/mm1.jpg" class="img-fluid services-img" alt="" /><br/><br/>
 
 
         </div>
@@ -147,28 +159,13 @@ This can be used to create some interesting tool. For example, by knowing the po
   </main>
 
   <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Personal</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
+    <div class="container contact section">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
-        </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
+
     </div>
   </footer>
 

@@ -511,8 +511,11 @@ h6 {
 }
 
 .footer .credits {
-  font-size: 13px;
-  padding-top: 5px;
+  color:#2d2d2d;
+}
+
+.footer .credits a {
+  color:#2d2d2d;
 }
 
 /*--------------------------------------------------------------
@@ -1515,3 +1518,6 @@ section,
 .isotope-item > a > h4{
   text-align: center;
 }
+
+
+

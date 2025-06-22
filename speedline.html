@@ -1,138 +1,136 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Trails Generator</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href ="assets/css/noscript.css" /></noscript>
-		<script src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python&amp;skin=sunburst"></script>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Generating Trail Effects</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-				<!-- Header -->
-					<header id="header">
-						
-					</header>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="speedline.html">Speedlines Generator</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-eye" id="count"><span class="label"></span></a></li>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-						</ul>
-					</nav>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									
-									<h1>Speedlines <br />
-										Generator</h1>
-									<span class="image fit"><img src="images/dp_cover.jpg" alt="" /></span>
-									
-								</header>
+  <!-- =======================================================
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Mar 05 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-								<!-- Text stuff -->
-									
+<body class="starter-page-page">
 
-								<!-- Table -->
-									
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-								<!-- Buttons -->
-                                
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
 
-								<!-- Form -->
-									
+      </a>
 
-								<!-- Image -->
-									<!--<h2>Image</h2>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-									<h3>Fit</h3>
-									<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
-									<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+    </div>
+  </header>
 
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										</div>
-									</div>-->
-
-									
-
-
-									<p> During the development period of The Dragon Prince, I developed a tool for generating speedlines without the need for any simulation engine. Here's the result for what I'm about to show you in this page.</p>
-									<!-- Break -->
-									<p>
-										<span class="image fit"><img src="images/ex4.gif" alt="" /></span>
-										<h3>How does it work?</h3>
-                                        First, I'd like to tell you about this node in Nuke called STMap. In case you're not familiar with it here's an explanation from Foundry.
-                                        <div class="box"> 
-										<p>"The STMap node allows you to move pixels around in an image. STMap uses two channels to figure out where each pixel in the resulting image should come from in the input channels.<br/>
-											The U and V values are the absolute position of the source pixel. The values are normalized to be between 0 and 1, where 0 is the bottom left corner of the input image, and 1 is the top right corner. "</p> 
-                                        </div>
-									   
-										
-                                        The goal here is to emit this gradient map from a moving object in Maya so that we use the STMap in Nuke to replace it with whatever image we want.
-										<span class="image fit"><img src="images/stmap.jpg" alt="" /></span>
-										<br/>
-										I'm going to work on this shot to simplify the process<br/>
-										<span class="image fit"><img src="images/raw.gif" alt="" /></span>
-										<h3>Let's start</h3>
-										In Maya, select an edge that you want to emit the tail and convert it to a curve (Modify -> Convert -> Polygon Edges to Curves ).<br/>
-										Then select the curve you just made and create snapshots from it (Visualize  -> Create Animation Snapshot).
-                                        <div class="box"> 
-                                            <p>"Animation Snapshot creates copies of animated objects at intervals of a playback range. Animation Snapshot works on NURBS or polygonal geometry"</p> 
-										</div>
-										
-										<span class="image fit"><img src="images/snapshots.JPG" alt="" /></span>
-										
-										Now loft these edges with with the following setting (Number V controls the smoothness of the generated mesh).<br/>
-										it's crucial that you set Surface Degree to Cubic. <br/>
-										This will ensure that the faces are evenly spaced out along the vertical axis of the uv.
-										<br/><br/>
+  <main class="main">
 
 
 
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-5"><span class="image fit"><img src="images/loftSettings.JPG" alt="" /></span></div>
-												<div class="col-5"><span class="image fit"><img src="images/loft.JPG" alt="" /></span></div>
-											</div>
-										</div>
-										
-										<span class="image fit"><img src="images/uv.JPG" alt="" /></span><br/>
 
-										The following python code will construct gradient and transparency ramps for the lofted mesh.<br/>
-										The code will also set some expressions on these ramps so that they look as if they're following the object.
+    <!-- Starter Section Section -->
+    <section id="portfolio" class="portfolio section">
 
-                                    </p>
+      <br/><br/><br/>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Maya & Nuke</h2>
+        <div><span>Generating Trail Effects</span></div>
+      </div><!-- End Section Title -->
 
-									<pre >
-<code class = "prettyprint">							
+
+      
+      <div class="container" data-aos="fade-up">
+
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+          <img src="images/dp_cover.jpg" alt="" class="img-fluid services-img"><br/><br/>
+
+          
+          <p> During the development period of The Dragon Prince, I developed a tool for generating speedlines without the need for any simulation engine. Here's the result for what I'm about to show you in this page.</p>
+
+
+          <img src="images/ex4.gif" alt="" class="img-fluid services-img">
+          <h3>How does it work?</h3>
+          
+          <p>First, I'd like to tell you about this node in Nuke called STMap. In case you're not familiar with it here's an explanation from Foundry.</p>
+
+          <div class="box"> 
+          <p>"The STMap node allows you to move pixels around in an image. STMap uses two channels to figure out where each pixel in the resulting image should come from in the input channels.<br/>
+            The U and V values are the absolute position of the source pixel. The values are normalized to be between 0 and 1, where 0 is the bottom left corner of the input image, and 1 is the top right corner. "</p> 
+          </div>
+          
+          <p>The goal here is to emit this gradient map from a moving object in Maya so that we use the STMap in Nuke to replace it with whatever image we want.</p>
+          
+          <img src="images/stmap.jpg" alt="" class="img-fluid services-img"><br/><br/>
+
+          <p>I'm going to work on this shot to simplify the process</p>
+
+          <img src="images/raw.gif" alt="" class="img-fluid services-img"><br/><br/>
+
+          <h3>Let's start</h3>
+
+          <p>In Maya, select an edge that you want to emit the tail and convert it to a curve (Modify -> Convert -> Polygon Edges to Curves).<br/>
+          Then select the curve you just made and create snapshots from it (Visualize  -> Create Animation Snapshot).</p>
+          
+          <div class="box"> 
+            <p>"Animation Snapshot creates copies of animated objects at intervals of a playback range. Animation Snapshot works on NURBS or polygonal geometry"</p> 
+          </div>
+          
+          <img src="images/snapshots.JPG" alt="" class="img-fluid services-img"><br/><br/>
+          
+          <p>Now loft these edges with with the following setting (Number V controls the smoothness of the generated mesh).<br/>
+          it's crucial that you set Surface Degree to Cubic. <br/>
+          This will ensure that the faces are evenly spaced out along the vertical axis of the uv.</p>
+          
+          
+          <img src="images/loftSettings.JPG" alt="" class="img-fluid services-img"><br/><br/>
+          <img src="images/loft.JPG" alt="" class="img-fluid services-img"><br/><br/>
+
+          <p>
+            The following python code will construct gradient and transparency ramps for the lofted mesh.<br/>
+          The code will also set some expressions on these ramps so that they look as if they're following the object.
+          </p>
+
+        
+
+          <pre >
+            <code class = "prettyprint">							
 class Ramp():
     ramp = ""
 
@@ -266,57 +264,90 @@ surfaceShader = SurfaceShader()
 surfaceShader.connectColor(mergedRamps)
 surfaceShader.connectTransparancy(transparancyRamp)
 
-<!--</font>-->
-</code>
-	</pre>
-								<span class="image"><img src="images/allShaders.JPG" alt="" /></span>
-								<br/>
-								If you assign the shader you should get this.
-								<br/>
-								<span class="image"><img src="images/movingObj.gif" alt="" /></span>
-								<br/>
-								Now we just use the STMap in Nuke to hook any image.
-								<br/>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										
-										<span class="image"><img src="images/swaping.gif" alt="" /></span>
-										<span class="image"><img src="images/merged.gif" alt="" /></span>
-										<span class="image"><img src="images/matte.gif" alt="" /></span>
-										<span class="image"><img src="images/newStmap.gif" alt="" /></span>
-									</div>
-								</div>
-								<br/>
+          <!--</font>-->
+            </code>
+          </pre>
 
-								<span class="image"><img src="images/ex1.gif" alt="" width="600"/></span>
-								<span class="image"><img src="images/ex2.gif" alt="" width="600"/></span>
-								<br/><br/>
-								This tool was used in The Dragon Prince to generate speedlines in some shots.
-								<span class="image"><img src="images/dp.JPG" alt="" width="600"/></span>
-								<span class="image"><img src="images/sl.JPG" alt="" width="700"/></span>
-								<br/><br/><br/>
-								<h3>Speedlines with Houdini</h3>
-								
+          <img src="images/allShaders.JPG" alt="" class="img-fluid services-img"><br/><br/>
 
-								An alternative  approach that's more procedural can be done in Houdini.<br/>
-								We can scatter some points based on velocity threshold and generate lines using SOP Solver.
-								<span class="image"><img src="images/temp.gif" alt="" width="700"/></span>
-							</section>
+          <p>If you assign the shader you should get this.</p>
 
-					</div>
+          <img src="images/movingObj.gif" alt="" class="img-fluid services-img"><br/><br/>
 
-				
-			</div>
+          <p>Now we just use the STMap in Nuke to hook any image.</p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/counter_speedline.js"></script>
 
-	</body>
+              
+          <img src="images/swaping.gif" alt="" class="img-fluid services-img">
+          <img src="images/merged.gif" alt="" class="img-fluid services-img">
+          <img src="images/matte.gif" alt="" class="img-fluid services-img">
+          <img src="images/newStmap.gif" alt="" class="img-fluid services-img">
+
+          <br/>
+
+          <img src="images/ex1.gif" alt="" class="img-fluid services-img">
+          <img src="images/ex2.gif" alt="" class="img-fluid services-img">
+
+          <p>This tool was used in The Dragon Prince to generate speedlines in some shots.</p>
+          <img src="images/dp.JPG" alt="" class="img-fluid services-img">
+          <img src="images/sl.JPG" alt="" class="img-fluid services-img">
+          <br/><br/><br/><br/>
+          <h3>Speedlines with Houdini</h3>
+          
+
+          <p>An alternative  approach that's more procedural can be done in Houdini.<br/>
+          We can scatter some points based on velocity threshold and generate lines using SOP Solver.</p>
+          <img src="images/temp.gif" alt="" class="img-fluid services-img">
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+<footer id="footer" class="footer dark-background">
+    <div class="container contact section">
+      
+
+
+
+      <div class="container">
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
