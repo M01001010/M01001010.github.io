@@ -1521,3 +1521,8 @@ section,
 
 
 
+.scaled-gif {
+  width: 50%; /* Scales the GIF to 50% of its container's width */
+  max-width: 400px; /* The GIF will never get wider than 400px */
+  height: auto; /* The height adjusts automatically to maintain aspect ratio */
+}
