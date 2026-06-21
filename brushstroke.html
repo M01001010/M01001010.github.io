@@ -101,13 +101,57 @@
           <p>
             In Houdini, we can scatter planes with colors that represent the primitives positions (@P).<br />
           The planes are then cut by brush-like alpha. In Nuke we converted the primitives colors (world position) from world space to screen space.
-          (Converting the colors from world to screen was covered in <a href="point_position.html">point position Applications</a>.)
+          (Converting the colors from world to screen was covered in <a href="point_position.html">point position Applications</a>).
           </p>
 
           
           <p>finally we use the STMap node just like we did with <a href="speedline.html">the Trails Generator</a>.<br/></p>
           
-          <span class="img-fluid services-img"><img src="images/paint4.jpg" alt="" /></span>
+          <a href="images/paint4.jpg"><span ><img src="images/paint4.jpg" class="img-fluid services-img" alt="" /></span></a>
+
+          <br/><br/><br/><br/>
+
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Alternative Approach</h2>
+            <div><span></span></div>
+          </div>
+
+          <p>Instead of scatter the brush geos in Houdini, another approach is to encode point cloud data into an EXR image and reconstruct it inside Nuke using BlinkScript.</p>
+
+          <a href="images/brush/scatter.jpg"><span ><img src="images/brush/scatter.jpg" class="img-fluid services-img" alt="" /></span></a>
+          <br/><br/>
+
+          
+          <h4>In Houdini</h4>
+          <ul>
+            <li>Scatter points in 3D space across the source geometry</li>
+            <li>Project the points into screen space and encode their attributes into color channels:</li>
+            <ul>
+              <li>R, G = Screen-space X and Y position</li>
+              <li>B = Depth</li>
+              <li>A = Point ID</li>
+            </ul>
+          </ul>
+
+          <h4>In Nuke</h4>
+          <ul>
+            <li>Read the EXR and use BlinkScript to process the encoded pixel data</li>
+            <li>Reconstruct the original point positions by decoding the screen-space coordinates and depth values stored in the image</li>
+            <li>Generate brush stroke instances from the reconstructed points, allowing the strokes to be rendered and manipulated entirely within Nuke</li>
+          </ul>
+
+          <p>This approach effectively treats the EXR as a compact point cloud container. By transferring point data through image channels rather than geometry files, large numbers of points can be transported efficiently between Houdini and Nuke while maintaining full control over stroke generation during compositing.</p>
+
+
+
+          <br/><br/>
+          <img src="images/brush/houdini.gif" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <img src="images/brush/unnamed.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <img src="images/brush/demo.gif" alt="" class="img-fluid services-img">
+
+
 
 
         </div>
