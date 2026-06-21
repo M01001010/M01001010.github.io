@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Optimizing Heavy Scenes</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Mar 05 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+
+
+    <!-- Starter Section Section -->
+    <section id="portfolio" class="portfolio section">
+      
+      <br/><br/><br/>
+
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>TD Tools</h2>
+        <div><span>Nuke</span></div>
+      </div> -->
+
+
+
+      
+      <div class="container" data-aos="fade-up">
+
+
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+
+          <div class="container section-title" data-aos="fade-up">
+            <h2>TD Tools</h2>
+            <div><span>Houdini</span></div>
+          </div>
+
+
+          <h3>Megascans Pipeline Integration System</h3>
+          <br/>
+          <p>This system streamlines the acquisition, ingestion, and reuse of Megascans assets across the production pipeline, built around three connected components.</p>
+          <p>The first component is a Python-based Megascans Library Downloader, which allows the entire Megascans asset library to be downloaded locally in a structured and automated way.</p>
+          <a href="https://github.com/M01001010/MegascanDownloader/blob/master/megascan_downloader.py">Megascans Library Downloader</a>
+          <br/><br/>
+          <p>The second component handles pipeline ingestion, taking downloaded assets and converting them into studio-ready resources. This step ensures assets conform to internal naming conventions, directory structures, and pipeline standards before being published.</p>
+          
+          <p>The third component is a dedicated asset browser UI, which provides artists with a centralized interface to search, preview, import, and export Megascans assets. The browser abstracts the complexity of file locations and pipeline structure, allowing artists to focus on quick asset discovery and reuse.</p>
+          
+          <br/>
+          <img src="images/nuke/ms1.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <img src="images/nuke/ms2.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <p>Together, these tools form a complete end-to-end system—from external asset acquisition to production-ready integration—significantly reducing manual setup time and improving consistency across departments.</p>
+          <br/><br/><br/><br/>
+
+          
+          <h3>Megascan to USD</h3>
+          <img src="images/nuke/h1.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <p>This Houdini tool is made for a personal project and it automates and standardizes the ingestion of Houdini assets originating from Quixel Megascans via Bridge.</p>
+          <p>After importing a Megascans 3D asset into Houdini, the tool can be executed directly on the selected object node to perform a series of pipeline conversions and setup tasks.</p>
+
+          <ul>
+            <li>Constructs a cop network for converting albedo to ACES</li>
+            <li>Generates proxy mesh for USD previewing</li>
+            <li>Converts the shader from Principled shader to MaterialX</li>
+            <li>Generate USD Variants (if applicable)</li>
+          </ul>
+
+          <img src="images/nuke/h2.JPG" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <img src="images/nuke/h3.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <img src="images/nuke/h4.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+
+          <br/><br/><br/><br/>
+
+
+
+          <br/><br/>
+
+          <div class="container section-title" data-aos="fade-up">
+            <h2>TD Tools</h2>
+            <div><span>Nuke</span></div>
+          </div>
+
+          <br/>
+          <h3>P Mask Gizmo</h3>
+          <img src="images/nuke/pmask.gif" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <p>
+            This nuke gizmo allows you to create a mask using the point position aov. 
+            Unlike the many gizmos you'll find out there, this gizmo uses 2d handle to generate 3d mask. 
+            Under the hood it's sampling the pixle under the 2d handle and manipulating the P matrix
+          </p>
+          <br/><br/><br/><br/>
+
+
+          <h3>Sequence Viewer</h3>
+          <img src="images/nuke/seq.gif" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <p>This Nuke tool allows artists to quickly review all shots and sequences within a selected episode in a single unified interface. Shots can be displayed side by side, making it easy to maintain continuity across sequences.</p>
+          <p>Under the hood, the tool automatically imports all Read nodes and organizes them into a structured network, enabling flexible viewing modes by sequence, individual shot, or custom selection.</p>
+          <p>Additional features include the ability to import and view shot-specific scripts, as well as advanced filtering options such as approval status, production progress, and assignment (by artist or team member). This helps streamline review workflows and improves overall editorial and continuity tracking.</p>
+          <br/><br/><br/><br/>
+
+
+          <h3>Precomp Manager</h3>
+          <img src="images/nuke/precomp.gif" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <p>
+            Artists can render any connected node tree directly from the tool, automatically generating and organizing precomp outputs according to the project's naming and versioning conventions. The tool provides built-in controls for creating new versions, incrementing or decrementing existing versions, and overriding previous renders when required.
+          </p>
+          <br/><br/><br/><br/>
+
+
+
+          <div class="container section-title" data-aos="fade-up">
+            <h2>TD Tools</h2>
+            <div><span>Nuke & Katana</span></div>
+          </div>
+
+
+          <h3>Artist Library (Agnostic)</h3>
+          <img src="images/nuke/artistlibrary1.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+
+          <p>The Artist Library is a tool developed for both Nuke and Katana that allows artists to quickly share, discover, and reuse workflow tools.</p>
+          <p>Artists can export any selected nodes directly to their personal library with a single click. Once published, those tools become immediately available for browsing and importing by other artists. Supervisors have the additional ability to publish tools to a global library, making approved workflows and utilities accessible across the entire production.</p>
+          <p>Before the Gizmo Library was introduced, artists typically shared tools manually through files, emails, or chat messages. This often led to duplicated work, lost utilities, and situations where artists knew a useful gizmo existed but could not remember who created it or where it was stored.</p>
+          <p>The library centralized knowledge sharing and significantly reduced the friction of distributing workflow improvements. Adoption was rapid, with the majority of the team incorporating it into their daily workflow shortly after its release. The result was faster collaboration, better reuse of production-proven tools, and a growing repository of artist-created solutions that benefited the entire department.</p>
+          <br/>
+          <img src="images/nuke/artistlibrarykatana2.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <img src="images/nuke/artistlibrary3.png" alt="" class="img-fluid services-img">
+          <br/><br/><br/><br/>
+
+          <h3>EXR Camera Matrix Visualizer</h3>
+          <img src="images/nuke/metadatanuke.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <img src="images/nuke/metadatakatana.png" alt="" class="img-fluid services-img">
+          <br/><br/>
+          <p>This tool was developed to extract and visualize camera data embedded within low-resolution EXR renders used during look development and lighting reviews.</p>
+          <p>By reading the camera transformation matrix stored in the EXR metadata, the tool reconstructs camera orientation information directly inside Nuke. This data can then be used to perform a variety of spatial analyses without requiring access to the original 3D scene.</p>
+          <p>One of the primary applications was lighting visualization. By specifying a light direction, the tool calculates and displays where that light would appear relative to the camera view. This enabled artists to quickly validate lighting setups and understand shot orientation using only rendered images and metadata.</p>
+          <p>To verify accuracy, the calculated light direction in Nuke was compared against the original light direction used in Katana, producing matching results. This provided confidence that the metadata extraction and transformation calculations were correctly reproducing the spatial relationships from the source scene.</p>
+          <p>The tool transformed otherwise passive render metadata into actionable production information, enabling faster review workflows and improved communication between lighting and compositing teams.</p>
+
+          <!-- <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3> -->
+          <!-- <ul>
+            <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+          </ul> -->
+          
+          
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+<footer id="footer" class="footer dark-background">
+    <div class="container contact section">
+      
+
+
+
+      <div class="container">
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
